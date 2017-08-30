@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<!-- saved from url=(0029)http://shonejin.com/Romantic/ -->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>I love you</title>
+	
+	<style type="text/css">
+		@font-face {
+			font-family: digit;
+			src: url('digital-7_mono.ttf') format("truetype");
+		}
+	</style>
+	<link href="./Happy Valentine's Day/default_dev.css" type="text/css" rel="stylesheet">
+	<link href="./Happy Valentine's Day/fonts.css" type="text/css" rel="stylesheet">
+	<script type="text/javascript" src="./Happy Valentine's Day/jquery.js"></script>
+	<script type="text/javascript" src="./Happy Valentine's Day/garden.js"></script>
+    <script type="text/javascript" src="./Happy Valentine's Day/functions_dev.js"></script>
+</head>
+
+<body style="background: url(MyWorld.jpg) no-repeat center;
+							-webkit-background-size: cover; -moz-background-size: cover;
+							-o-background-size: cover; background-size: cover;">
+	<div id="mainDiv" style="z-index:0">
+		<div id="content" style="width: 1110px; height: 625px; margin-top: 10px; margin-left: 119.5px;">
+			<div id="code" onclick="hideVideo()" style="margin-top: 112.5px;">
+				<span class="keyword">从你的全世界路过</span><br>
+				<span class="keyword">有人说</span><br>
+				<span class="keyword">喜欢一个人是可以很美好的</span><br>
+				<span class="keyword">比如</span><br>
+				<span class="keyword">喜欢你</span><br>
+				<span class="keyword">也许,在</span><span class="space"><span class="keyword">61分,在25时,在星期八,在13月</span><br>
+				<span class="keyword">在未知的另一个时空</span><br>
+				<span class="keyword">We are together</span><br>
+				<br><br>
+				<span class="keyword">一个人</span><br>
+				<span class="keyword">终将遇见另一个人</span><br>
+				<span class="keyword">对你点点头</span><br>
+				<span class="keyword">贯彻未来</span><span class="space">
+				<span class="keyword">数遍</span><br>
+				<span class="keyword">生命的公路牌</span><span class="space">
+				<br><br><br><br>
+				<!--生命里面有很多事情,沉重婉转至不可说,我想你明白,我也明白.
+				你是个很好的女孩,很高兴可以遇见你! 我一直尝试去了解,去接触你,可是感情这种事是不可以勉强的,愿你早日找到属于自己的谢霆锋 :) -->
+				<span class="placeholder"><span class="placeholder"><span class="placeholder"><span class="placeholder">
+					<span class="keyword2">—— Guokai Li</span>
+			</span></span></span></span></span></span></span></span>_</div>
+			<div id="loveHeart">
+				<canvas id="garden" width="670" height="625"></canvas>
+				<div id="words" style="position: absolute; top: 205px; left: 629.5px;">
+					<div id="messages" style="display: block;">
+						If you can give me a chance , I will  
+						<div id="elapseClock"><span class="digit">1710</span> days <span class="digit">14</span> hours <span class="digit">06</span> minutes <span class="digit">18</span> seconds</div>
+					</div>
+					<div id="loveu" style="display: block;">
+						You will be my sunshine of my life <br>书熟蜀澍<br><br>
+						<div class="signature">Happy Valentine's Day !</div>
+					</div>
+					<div id="dog" style="display: block;">
+						<a onclick="">
+							<img id="dogImg" src="./Happy Valentine's Day/dog_small.png" onmouseover="dogMouseOver()">
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript">
+		var offsetX = $("#loveHeart").width() / 2;
+		var offsetY = $("#loveHeart").height() / 2 - 55;
+		var together = new Date();
+		together.toLocaleString();
+		if (!document.createElement('canvas').getContext) {
+			var msg = document.createElement("div");
+			msg.id = "errorMsg";
+			msg.innerHTML = "Your browser doesn't support HTML5!<br/>Recommend use Chrome 14+/IE 9+/Firefox 7+/Safari 4+"; 
+			document.body.appendChild(msg);
+			$("#code").css("display", "none")
+			$("#copyright").css("position", "absolute");
+			$("#copyright").css("bottom", "10px");
+		    document.execCommand("stop");
+		} else {
+			setTimeout(function () {
+				startHeartAnimation(1);
+			}, 430);
+
+			timeElapse(together);
+			setInterval(function () {
+				timeElapse(together);
+			}, 50);
+
+			adjustCodePosition();
+			$("#code").typewriter();
+		}
+	</script>
+
+
+</body></html>
